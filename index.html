@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Survey Form: The Impact of COVID-19 on Student's Academic Motivation</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<header>
+  <h1 id="title">The Impact of COVID-19 on Student's Academic Motivation</h1>
+  <p id="description">This survey aims to determine the positive and negative
+    impacts during COVID-19 pandemic to student's academic motivation from first
+    to the fourth year of college.</p>
+</header>
+<form id="survey-form">
+  <div class="user-info">
+  <label for="name" id="name-label">
+    Name
+  </label>
+  <input
+    id="name"
+    type="text"
+    name="name"
+    placeholder="Enter name here"
+    required
+  />
+  <label for="number" id="number-label">
+    Year Level
+  <input
+    id="number"
+    type="number"
+    min="1"
+    max="4"
+    placeholder="Enter college year level here"
+    required
+  />
+  </label>
+  <label for="email" id="email-label">
+    Email
+  </label>
+  <input
+    id="email"
+    type="email"
+    name="email"
+    placeholder="Enter email here"
+    required
+  />
+  <label for="password" id="password-label">
+    Password
+  </label>
+  <input
+    id="password"
+    type="password"
+    name="password"
+    minlength="[a-z0-9]{8,}"
+    placeholder="Enter password here"
+    required
+  />
+  </div>
+  <h3>Questions</h3>
+  <ol>
+    <li><label for="dropdown" id="q1-label">On the scale of 1 (lowest) to 5 (highest),
+      how has the pandemic impacted your overall academic motivation?</label></li>
+    <select id="dropdown" name="pandemicImpactToMotivation">
+      <option value="">(Select option that applies)</option>
+      <option value="1">1 (Significantly decreased my motivation)</option>
+      <option value="2">2 (Slightly decreased my motivation)</option>
+      <option value="3">3 (No change to my motivation)</option>
+      <option value="4">4 (Slightly increased my motivation)</option>
+      <option value="5">5 (Significantly increased my motivation)</option>
+    </select>
+    <li><label id="q2-label">What are the following <strong>positive</strong> impacts
+    the COVID-19 pandemic has done to your academic motivation? Check all that
+    applies.</label></li>
+    <label>
+      <input
+        type="checkbox"
+        name="positive-impact"
+        value="moreTime">The pandemic has given me more time to focus on my studies
+    </label>
+    <label>
+      <input
+        type="checkbox"
+        name="positive-impact"
+        value="ownPace">The online learning format has allowed me to work at my own pace
+    </label>
+    <label>
+      <input
+        type="checkbox"
+        name="positive-impact"
+        value="engagingResources">I have found some online learning resources more engaging than traditional
+      lectures
+    </label>
+    <label>
+      <input
+        type="checkbox"
+        name="positive-impact"
+        value="appreciateEducation">The pandemic has made me appreciate the value of education more
+    </label>
+    <label>
+      <input
+        type="checkbox"
+        name="positive-impact"
+        value="selfDiscipline">I have developed greater self-discipline and independent learning skills
+    </label>
+    <li><label id="q3-label">What are the following <strong>negative</strong> impacts
+    the COVID-19 pandemic has done to your academic motivation? Check all that
+    applies.</label></li>
+    <label>
+      <input
+      type="checkbox"
+      name="negative-impact"
+      value="deteriorationLearning">The lack of in-person interaction with teachers and peers has deteriorated
+      my learning
+    </label>
+    <label>
+      <input
+      type="checkbox"
+      name="negative-impact"
+      value="lackFocus">Online learning has made it difficult for me to stay focused
+    </label>
+    <label>
+      <input
+      type="checkbox"
+      name="negative-impact"
+      value="stressAnxiety">The pandemic has increased my stress and anxiety, making it difficult to
+      concentrate on studies.
+    </label>
+    <label>
+      <input
+      type="checkbox"
+      name="negative-impact"
+      value="disruptedSleepPatterns">Changes in daily routines and schedules have disrupted my studying
+      patterns
+    </label>
+    <label>
+      <input
+      type="checkbox"
+      name="negative-impact"
+      value="financialDifficulty">I have experienced financial difficulties that have impacted my ability
+      to focus on academics.
+    </label>
+    <li><label id="q4-label">How satisfied are you with the support you've received from your educational institution
+      (professors, advisors, etc.) during the pandemic?</label></li>
+    <label>
+      <input
+        type="radio"
+        name="educationalSupportSatisfaction"
+        value="very-satisfied">Very satisfied
+    </label>
+    <label>
+      <input
+        type="radio"
+        name="educationalSupportSatisfaction"
+        value="somewhat-satisfied">Somewhat satisfied
+    </label>
+    <label>
+      <input
+        type="radio"
+        name="educationalSupportSatisfaction"
+        value="neutral">Neutral
+    </label>
+    <label>
+      <input
+        type="radio"
+        name="educationalSupportSatisfaction"
+        value=somewhat-dissatisfied"">Somewhat dissatisfied
+    </label>
+    <label>
+      <input
+        type="radio"
+        name="educationalSupportSatisfaction"
+        value=very-dissatisfied"">Very dissatisfied
+    </label>
+    <li><label id="q5-label">Do you feel comfortable and confident communicating with your instructors
+    and peers through online platforms (e.g., Messenger, G-Mail)?</label></li>
+    <label>
+    <input
+      type="radio"
+      name="confidenceInCommunication"
+      value="very-comfortable-confident"/>Very comfortable and confident
+    </label>
+    <label>
+      <input
+        type="radio"
+        name="confidenceInCommunication"
+        value="somewhat-comfortable"/>Somewhat Comfortable and confident
+    </label>
+    <label>
+      <input
+        type="radio"
+        name="confidenceInCommunication"
+        value="neutral"/>Neutral
+    </label>
+    <label>
+      <input
+        type="radio"
+        name="confidenceInCommunication"
+        value="somewhat-uncomfortable-unconfident"/>Somewhat uncomfortable and unconfident
+    </label>
+    <label>
+      <input
+        type="radio"
+        name="confidenceInCommunication"
+        value="very-uncomfortable-unconfident"/>Very uncomfortable and unconfident
+    </label>
+    <li><label for="q6" id="q6-label">In your opinion, what are the most effective strategies helpful
+      in maintaining your academic motivation during the pandemic?</label></li>
+    <textarea id="q6"></textarea>
+  </ol>
+  <input
+    id="submit"
+    type="submit">
+</form>
+</body>
+<footer>Survey questionnaires generated with <a href="https://bard.google.com/" target="blank">Bard.AI</a></footer>
+</html>
